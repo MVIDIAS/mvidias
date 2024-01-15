@@ -16,9 +16,9 @@ Version: 1.0
 07. SERVICES/FEATURES
 08. PRICING
 09. BLOG
-10. CONTACT & REGISTER
+10. CONTACT
 11. OTHER ELEMENTS
-		a. Newsletter & Register
+		a. Newsletter
 		b. Buttons
 		c. Gallery Images Animation
 		d. Testimonials
@@ -205,22 +205,6 @@ iframe {
 }
 
 /* margin and padding classes */
-
-.no-padding{
-	padding:0;
-}
-
-.no-padding-left{
-	padding-left:0;
-}
-
-.no-padding-right{
-	padding-left:0;
-}
-
-.small-padding-left{
-	padding-left:5px;
-}
 
 .margin-right-25 {
 	margin-right: 25px !important;
@@ -590,33 +574,40 @@ ul.footer_social li a i:hover {
 /* ========================================================== */
 
 .home-section {
-	background: #008aff; /* For browsers that do not support gradients */
-  	background: -webkit-linear-gradient(135deg, #6B02FF 0%, #985BEF 100%); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(bottom right, #6B02FF, #985BEF); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(bottom right, #008aff, #1ad2fd); /* For Firefox 3.6 to 15 */
-  	background: linear-gradient(to 135deg, #6B02FF 0%, #985BEF 100%); /* Standard syntax */
+	background: url(http://placehold.it/1920X1080) top center no-repeat;
 	background-size: cover;
 	width: 100%;
 	position: relative;
-  	padding-top: 125px;
-  	padding-bottom: 0;
+  	padding-top: 220px;
+  	padding-bottom: 165px;
+}
+
+.home-section-overlay{
+	background: #123457; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #123457 , #123457); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #123457 , #123457); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	opacity: 0.7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .home-section h1{
-	margin-bottom: 10px;
-	font-size: 40px;
-    line-height: 46px;
+	font-size: 42px;
+    line-height: 48px;
     font-weight: 500;
     color: #ffffff;
     letter-spacing: 1px;
 }
 
 .home-section p{
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 18px;
+	line-height: 28px;
 	font-weight: 400;
 	color: #fff;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 a.hero-video-text{
@@ -1181,10 +1172,8 @@ a.button-blog:hover{
 }
 
 /* ========================================================== */
-/* 					   10. CONTACT & REGISTER                 */
+/* 						    10. CONTACT                       */
 /* ========================================================== */
-
-/* -----  Contact ----- */
 
 #contact-form{
 	margin:0 auto;
@@ -1286,119 +1275,6 @@ p.contact_success_box{
 	color:#fff;
 	font-size:20px;
 	font-style:italic;
-	padding:20px 20px;
-	border:1px solid #fff;
-	webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-}
-
-/* -----  Register ----- */
-
-.register-inner{
-	width:100%;
-	max-width:585px;
-	padding:50px 0 50px 35px;
-}
-
-.register-form{
-	padding:25px 0 20px 0;
-}
-
-input.register-input{
-	width:100%;
-	height:52px;
-    padding-left:2%;
-    padding-right:2%;
-	margin-bottom:20px;
-	color: #fff;
-	border: 1px solid #fff;
-	background-color: transparent;
-    font-size:14px;
-	float:left;
-	-webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-}
-
-select.register-input{
-	width:100%;
-	height:52px;
-    padding-left:2%;
-    padding-right:2%;
-	margin-bottom:20px;
-	color: #fff;
-	border: 1px solid #fff;
-	background-color: transparent;
-    font-size:14px;
-	float:left;
-	-webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
-    border-radius: 5px 5px 5px 5px;
-}
-
-input.register-submit-top, input.register-submit{
-	color: #34b1c4;
-	border: 1px solid #fff;
-	background-color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-	font-weight:700;
-	width:100%;
-	max-width:535px;
-    padding: 16px 0;
-    text-transform: uppercase;
-	-webkit-border-radius: 3px 3px;
-    -moz-border-radius: 3px 3px;
-    border-radius: 3px 3px;
-	transition: all .50s ease-in-out;
-	-moz-transition: all .50s ease-in-out;
-	-webkit-transition: all .50s ease-in-out;
-}
-
-input.register-submit-top{
-	width:100%;
-	max-width:540px;
-}
-
-input.register-submit:hover{
-	color:#fff;
-	background-color: transparent;
-	border:1px solid #fff;
-	transition: all .50s ease-in-out;
-	-moz-transition: all .50s ease-in-out;
-	-webkit-transition: all .50s ease-in-out;
-}
-
-input.white-input::-webkit-input-placeholder,
-select.white-input::-webkit-input-placeholder { /* WebKit browsers */
-    color:#fff!important;
-}
-input.white-input:-moz-placeholder,
-select.white-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color:#fff!important;
-}
-input.white-input::-moz-placeholder,
-select.white-input::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:#fff!important;
-}
-input.white-input:-ms-input-placeholder,
-select.white-input:-ms-input-placeholder { /* Internet Explorer 10+ */
-    color:#fff;
-}
-
-#register-form input.register-input:focus, #register-form select.register-input:focus {
-  border-color:#fff!important;
-  outline: none;
-}
-
-p.register_success_box{
-	display:inline-block;
-	color:#fff;
-	font-size:16px;
-	font-style:italic;
-	margin:20px 0 30px 0;
 	padding:20px 20px;
 	border:1px solid #fff;
 	webkit-border-radius: 5px 5px 5px 5px;
@@ -1542,10 +1418,9 @@ input#email_newsletter:-ms-input-placeholder { /* Internet Explorer 10+ */
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 500;
-	border: 1px solid #fff;
 	border-radius: 5px 5px;
 	margin: 10px 10px;
-	padding: 15px 30px;
+	padding: 16px 30px;
 	display: inline-block;
 	transition: all 0.4s ease-in-out;
 	-webkit-transition: all 0.4s ease-in-out;
@@ -1553,8 +1428,13 @@ input#email_newsletter:-ms-input-placeholder { /* Internet Explorer 10+ */
 
 .btn-white:hover{
 	color: #fff;
-	background: transparent;
-	border: 1px solid #fff;
+	background: #008aff;
+    background: -webkit-linear-gradient(135deg, #985BEF 0%, #6B02FF 100%);
+    background: -o-linear-gradient(bottom right, #985BEF, #6B02FF);
+    background: -moz-linear-gradient(bottom right, #985BEF, #6B02FF);
+    background: linear-gradient(135deg, #985BEF 0%, #6B02FF 100%);
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
 }
 
 .btn-white-border {
@@ -1913,14 +1793,6 @@ ul.features-list-hero li i{
 	font-size:42px;
 	line-height: 46px;
 	vertical-align: text-top;
-}
-
-ul.features-list-hero li i.blue{
-	color: #008aff;
-    background: #008aff;
-    background: -webkit-gradient(linear, left top, right bottom, from(#b580ff), to(#905ca4));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* ========================================================== */
