@@ -574,8 +574,6 @@ ul.footer_social li a i:hover {
 /* ========================================================== */
 
 .home-section {
-	background: url(http://placehold.it/1920X1080) top center no-repeat;
-	background-size: cover;
 	width: 100%;
 	position: relative;
   	padding-top: 220px;
@@ -636,6 +634,8 @@ a.hero-video-text:hover .hero-video-icon{
 	background: #fff;
 	color: #4285f4;
 }
+
+.vegas-background { height: auto!important; z-index: -1; }
 
 /* ========================================================== */
 /* 			               05. ABOUT                          */
